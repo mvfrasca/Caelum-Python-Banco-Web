@@ -1,0 +1,19 @@
+
+http://dontpad.com/8664/py14
+
+arquivos do curso:
+	https://drive.google.com/drive/folders/1YtwKBjOHSKVidVKUTDdErfnYRtL9gjtf
+
+
+
+site oficial:
+	https://www.python.org/
+
+documentação oficial:
+	https://docs.python.org/3/library/index.html
+
+python brasil:
+	https://python.org.br/
+
+site para praticar:
+	https://www.hackerrank.com
