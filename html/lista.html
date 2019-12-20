@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt">
+   <head>
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}" > 
+   </head>
+   <body>
+       <div class="container">
+
+           <h1>contas</h1>
+           <hr />
+           <a href="/form">criar nova conta</a>
+           <br />
+           <br />
+
+           <div>
+               <table class="table">
+                   <thead>
+                       <tr>
+                           <th>Número</th>
+                           <th>Titular</th>
+                           <th>Saldo</th>
+                           <th>Limite</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       {% for conta in contas %}
+                           <tr>
+                               <td>{{conta.numero}}</td>
+                               <td>{{conta.titular}}</td>
+                               <td>{{conta.saldo}}</td>
+                               <td>{{conta.limite}}</td>
+                           </tr>    
+                       {% endfor %}
+                   </tbody>
+               </table>
+           </div>
+       </div>  
+   </body>
+</html>

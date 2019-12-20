@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt">
+   <head>
+       <!-- Required meta tags -->
+       <meta charset="utf-8">
+
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}" > 
+   </head>
+   <body>
+       <div class="container">
+
+           <h1>nova conta</h1>
+           <hr />
+
+           <form action="/cria_conta", method="post">
+               <div class="form-group col-sm-4">
+                   <label for="inputNumero">número</label>
+                   <input type="text" class="form-control" id="inputNumero" name="numero" placeholder="número">
+               </div>
+               <div class="form-group col-sm-4">
+                   <label for="inputTitular">titular</label>
+                   <input type="text" class="form-control" id="inputTitular" name="titular" placeholder="titular">
+               </div>
+ 
+               <div class="form-group col-sm-4">
+                   <label for="inputSaldo">saldo inicial</label>
+                   <input type="text" class="form-control" id="inputSaldo" name="saldo" placeholder="0.0">
+               </div>
+               <div class="form-group col-sm-4">
+                   <label for="inputLimite">limite</label>
+                   <input type="text" class="form-control" id="inputLimite" name="limite" placeholder="0.0">
+               </div>
+               <button type="submit" class="btn btn-primary">cria conta</button>
+           </form>
+
+       </div>  
+   </body>
+</html>
